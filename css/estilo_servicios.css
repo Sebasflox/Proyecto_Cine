@@ -1,0 +1,36 @@
+.centrado {
+    width: 50%;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    font: 1em arial, helvetica, sans-serif;
+    color: white;
+  }
+
+.textocentrado {
+    text-align:center;   
+}
+
+.textocentrado1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    /* IMPORTANTE */
+    text-align: center;
+  
+}
+
+#imagen {
+   
+    width: 200px;
+    height: 200px;
+}
+
+.background {
+    background-color: rgb(66, 66, 71);
+}
+
+.background1 {
+    background-color: rgb(73, 73, 177);
+}

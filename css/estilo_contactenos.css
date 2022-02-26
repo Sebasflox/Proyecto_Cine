@@ -1,0 +1,24 @@
+.form-control:focus{
+    box-shadow: 0 0 10px  rgb(224, 70, 64) !important ;
+    border: 2px solid rgb(224, 70, 64);
+    color: rgb(224, 70, 64);
+}
+
+.margenes{
+
+    margin: 20px 30px;
+}
+
+.titulo{
+    font: bold 175% sans-senf;
+} 
+
+.bordes{
+    margin: 20px 30px;
+    border: 1px solid rgb(129, 124, 131);
+}
+
+.api {  
+    text-align:center;
+    width: 100%;
+}

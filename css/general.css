@@ -1,0 +1,27 @@
+.Texto{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+#imgLogo{
+    width: 100px;
+    height: 20px;
+}
+
+.btn-primary{
+    border: 2px solid white;
+    color: white;
+    background-color: red;
+
+}
+
+.btn-primary:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: red;
+
+}
+
+.alinear{
+    display: flex;
+    justify-content: center;
+}
