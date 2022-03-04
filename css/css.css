@@ -1,0 +1,63 @@
+.Titulos{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 30px;
+}
+
+.margen{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.margenTitulos{
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.margenDesarrolladores{
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.background {
+    background-color: #EB0000;
+    padding: 10px;
+}
+
+.background2 {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: auto;
+}
+
+#imgLogo{
+    width: 180px;
+    height: 50px;
+}
+
+.imgCartel {
+    width: 100%;
+    height: 70%;
+}
+
+.ajuste{
+    background-color: #fafafa;
+  margin: 3rem;
+  padding: 2rem;
+    text-align: center;
+}
+
+
+.carouselExampleIndicators {
+    width: 100% !important;    ;
+}
+
+#image-gallery {
+ 
+    height: 650px !important;
+    text-align: center;
+}
+
+.carousel-inner{
+    height: 650px !important;
+    text-align: center;
+}
