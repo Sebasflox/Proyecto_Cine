@@ -3,8 +3,8 @@
 }
 
 #imgLogo{
-    width: 100px;
-    height: 20px;
+    width: 180px;
+    height: 50px;
 }
 
 .btn-primary{
@@ -25,3 +25,38 @@
     display: flex;
     justify-content: center;
 }
+
+#texto_footer {
+    color:#ffffff;
+}
+
+#texto_footera {
+    color:#FF0000;
+    font-weight: bold;
+}
+
+.background {
+    background-color: #EB0000;
+    padding: 10px;
+}
+
+.background2 {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: auto;
+}
+
+#image-gallery {
+ 
+    height: 650px !important;
+    text-align: center;
+}
+
+.carousel-inner{
+    height: 650px !important;
+    text-align: center;
+}
+/* .imgCartel {
+    width: 100%; encontrar funcion
+    height: 70%;
+}*/
