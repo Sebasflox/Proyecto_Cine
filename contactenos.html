@@ -56,23 +56,26 @@
             <div class="col-6 ">
                 <section id="Registro">
                     <form method="get" action="" class="margenes api">
-                        <div class="mb-3">
-                        <div class="row g-1">
-                            <div class="col-3">
-                            <input type="text" class="form-control" id="nombre" name="nombre " placeholder="Nombre">
-                            </div>
-                            <div class="col-3">
-                            <input type="text" class="form-control" id="apellidos" name="apellidos " placeholder="Apellidos">
-                            </div>
-                        </div>
-                        </div>
                 
                         <div class="col-6 align-items-center">
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="correo" name="correo " placeholder="Correo Electronico">
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="asunto" name="asunto " placeholder="Asunto">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Motivo</option>
+                                    <option value="1">Queja</option>
+                                    <option value="2">Consulta</option>
+                                    <option value="3">Devolución</option>
+                                  </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Cine situado</option>
+                                    <option value="1">Moravia</option>
+                                    <option value="2">Cartago</option>
+                                    <option value="3">Desamparados</option>
+                                  </select>
                             </div>
                             <div class="mb-3">
                                 <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="¿Cómo podemos ayudar?"></textarea>  
@@ -85,67 +88,7 @@
         </div>
     </main>
 
-    <footer>
-        <div>
-          <div style="width: 100%; text-align: center; border-bottom: solid 2px red; margin-bottom: 13px; position: relative;" >
-            <img id="imgLogo" src="img/Fernando_Logo.png" style="padding-bottom: -50%; position: absolute; bottom: -23px; left: 45%; right: 0;" alt="Logo_inicio">
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-               <div>
-                 <p id="texto_footera" href="contactenos.html">Programación</p>
-             </div>
-             </div>
-              <div class="col">
-               <div>
-               <p id="texto_footera" href="contactenos.html">Sobre Fernando</p>
-               </div>
-             </div>
-              <div class="col">
-                <div>
-                   <p id="texto_footera" href="contactenos.html">Publicidad y Eventos</p>
-                </div>
-             </div>
-               <div class="col">
-                 <div>
-                   <p id="texto_footera" href="contactenos.html">Contactenos</p>
-                 </div>
-               </div>
-            </div>
-          </div>
-         <div class="container" style="background-color: black; margin: 0 !important; width: 100% !important;">
-           <div class="row">
-             <div class="col" style="margin-top: 27px;">
-              <div>
-                <p id="texto_footer" href="contactenos.html">Cartelera</p>
-                <p id="texto_footer" href="contactenos.html">Próximamente</p>
-                <p id="texto_footer" href="contactenos.html">Preventa</p>
-            </div>
-            </div>
-             <div class="col " style="margin-top: 27px;">
-              <div>
-              <p id="texto_footer" href="contactenos.html">Quienes somos</p>
-              <p id="texto_footer" href="contactenos.html">Salas</p>
-              <p id="texto_footer" href="contactenos.html">Terminos y condiciones</p>
-              </div>
-            </div>
-             <div class="col" style="margin-top: 45px;">
-               <div>
-                  <p id="texto_footer" href="contactenos.html">Eventos privados</p>
-                  <p id="texto_footer" href="contactenos.html">Publicidad</p>
-               </div>
-            </div>
-              <div class="col" style="margin-top: 45px;">
-                <div>
-                  <p id="texto_footer" href="contactenos.html">Escribanos</p>
-                  <p id="texto_footer" href="contactenos.html">Trabaja con nosotros</p>
-                </div>
-              </div>
-           </div>
-         </div>
-        </div>
-      </footer>
+    <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
