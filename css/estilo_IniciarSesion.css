@@ -19,9 +19,20 @@ input[type="password"]{
     border: none;
 }
 
+
 .contenedor{
     margin-bottom: 15px;
     border: 1px solid #aaa;
+}
+
+.form__I{
+    margin: 1em !important;
+    align-content: center;
+    border: 1px solid #1a2537;
+}
+
+.correo{
+    max-width: 100%;
 }
 
 .button{
@@ -42,9 +53,9 @@ p{
 @media(min-width:768px)
 {
     .formulario{
-        margin: auto;
+        margin: 5em 43em;
         width: 500px;
-        margin-top: 150px;
+        height: 30em;
         border-radius: 2%;
     }
 }

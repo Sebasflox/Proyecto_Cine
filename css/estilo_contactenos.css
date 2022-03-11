@@ -22,3 +22,16 @@
     text-align:center;
     width: 100%;
 }
+
+.container {
+    margin: 0 !important; 
+    width: 100% !important;
+    max-width: 127em;
+}
+
+.col{
+    text-align: center;
+}
+.foot{
+    background-color: black; 
+}

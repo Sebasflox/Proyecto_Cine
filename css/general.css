@@ -7,6 +7,10 @@
     height: 50px;
 }
 
+.first_nav{
+    color:#ffffff;
+}
+
 .btn-primary{
     border: 2px solid white;
     color: white;
@@ -28,6 +32,10 @@
 
 #texto_footer {
     color:#ffffff;
+}
+
+a{
+    text-decoration:none
 }
 
 #texto_footera {

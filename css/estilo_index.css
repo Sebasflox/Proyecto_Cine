@@ -32,10 +32,19 @@
 }
 
 #aas {
-    width: 1100px !important;
-    height: 600px !important;
+    width: 73em !important;
+    height: 37em !important;
+}
+
+h2 p{
+    margin: 1em 10px;
+    text-align: left;
+}
+
+.fixx{
+    margin: 1em;
 }
 
 .container {
-    max-width: 2700px !important;
+    max-width: 180em !important;
 }

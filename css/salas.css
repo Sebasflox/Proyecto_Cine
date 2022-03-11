@@ -1,0 +1,50 @@
+#asasa{
+    width: 1250px !important;
+    height: 30em;
+}
+
+.main{
+    padding: 1em;
+    text-align: center !important;
+    width: 120em;
+    height: 32em;
+    /*background-color: aqua;*/
+}
+
+.sala_R{
+    margin: 3em 15em;
+    width: 100em;
+    height: 18em;
+    background-color:     #C63535;
+    border: 2px solid black;
+}
+
+.First_R{
+    padding-left: 0% !important;
+    width: 50%;
+    height: 100%;
+}
+
+#img_Regular{
+    width: 121em;
+    height: 18em;
+    max-width: 100%;
+}
+
+.ver_mas{
+    color: #000000;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+h2{
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+a{
+    color: #fff;
+}

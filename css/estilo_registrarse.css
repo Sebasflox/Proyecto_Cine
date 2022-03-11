@@ -1,7 +1,23 @@
-.conteniner{
-    width: 100%;
-    padding: 15px;
-    border: 10px solid rgb(0, 0, 0);
+.form__R{
+    align-content: center;
+    width: 50%;
+    height: 500px;
+    margin: 1em !important;
+    padding: 15px !important;
+    border: 1px solid rgb(0, 0, 0) !important;
+    background-color: #C63535;
+    text-align: -webkit-center;
+    
     
 }
 
+.row{
+    margin: 1em;
+}
+
+.Texto{
+    text-align: center !important;
+    display: block;
+    font-size: 2em;
+    color: white;
+}
