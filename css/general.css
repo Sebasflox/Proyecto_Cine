@@ -1,5 +1,9 @@
-.Texto{
+*{
     font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.html{
+    overflow-x: hidden;
 }
 
 #imgLogo{
@@ -52,6 +56,7 @@ a{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     margin-bottom: auto;
+    font-weight: bold;
 }
 
 #image-gallery {
@@ -68,3 +73,4 @@ a{
     width: 100%; encontrar funcion
     height: 70%;
 }*/
+

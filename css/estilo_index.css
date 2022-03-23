@@ -48,3 +48,19 @@ h2 p{
 .container {
     max-width: 180em !important;
 }
+
+#nav_text{
+    color: black;
+    font-size: 25px;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+  }
+   
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }

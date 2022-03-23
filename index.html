@@ -7,17 +7,32 @@
     <title>Fernando</title>
     <link rel="icon" type="img/jfif" href="img/Moneda.jfif">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.bundle.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/estilo_index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+    <script>
+     
+      $(document).on('click', 'btn-modal', function(){
+        $('#modal1').modal('show');
+      });
+    </script>
+
+
 </head>
 
 <!--Botones-->
 <body>
-    <header>
+  
+
+      <header>
+      
       <div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end background">
             <a class="nav-link first_nav" href="servicios.html">Servicios</a>
@@ -34,10 +49,10 @@
                   </a> 
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contactenos.html">Contactenos</a>
+                  <a id="nav_text" class="nav-link Texto" href="contactenos.html">Contactenos</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a id="nav_text" class="nav-link dropdown-toggle Texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Salas
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,13 +61,30 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="protocolos.html">Protocolos</a>
+                    <a id="nav_text" class="nav-link Texto" href="protocolos.html">Protocolos</a>
                   </li>
               </ul>
         </div>
     </div>
+    <!-- Modal -->
+    <button id="btn-modal" class="btn btn-primary">qwewqe</button>
+      <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Prevencion</h2>
+            </div>
+            <div class="modal-body">
+              <a><img id="imgLogo" src="img/Fernando_Logo.png" alt="Logo_inicio"></a>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
+
 
 <!--Carusel 1-->
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -83,6 +115,7 @@
       </div>
 
       <h2><p>Cartelera Semanal</p></h2>
+      
 <!--Carusel pequeño-->
       <div>
           <div class="row">
@@ -204,6 +237,7 @@
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+<script src="js/index.js"></script>
 </body>
 
 </html>
