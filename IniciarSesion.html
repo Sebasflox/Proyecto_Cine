@@ -19,10 +19,11 @@
 </head>
 <body>
   <header>
+      
     <div>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end background">
-          <a class="nav-link" style="color:#e4d5d5" href="servicios.html">Servicios</a>
-          <a class="nav-link" style="color:#e4d5d5" href="servicios.html">Servicios</a>
+          <a class="nav-link first_nav" href="servicios.html">Servicios</a>
+          <a class="nav-link first_nav" href="servicios.html">Servicios</a>
           <a href="registrarse.html"><inpu class="btn btn-primary me-md-2" type="button" value="">Registrarse</a>
           <a href="IniciarSesion.html"><inpu class="btn btn-primary me-md-2" type="button" value="">IniciarSesion</a>
           
@@ -30,38 +31,49 @@
       <div class="background2">
           <ul class="nav nav-tabs">
               <li class="nav-item">
-                <img id="imgLogo" src="img/Fernando_Logo.png" alt="Logo_inicio">  
+                <a class="nav-link active" aria-current="page" href="index.html">
+                <img id="imgLogo" src="img/Fernando_Logo.png" alt="Logo_inicio"> 
+                </a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactenos.html">Contactenos</a>
+                <a id="nav_text" class="nav-link Texto" href="contactenos.html">Contactenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="nav_text" class="nav-link dropdown-toggle Texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Salas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="regulares_S.html">Regulares</a></li>
+                  <li><a class="dropdown-item" href="vip_S.html">Vip</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="salas.html">Salas</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="protocolos.html">Protocolos</a>
+                  <a id="nav_text" class="nav-link Texto" href="protocolos.html">Protocolos</a>
                 </li>
             </ul>
       </div>
   </div>
   </header>
 
-    <main>
-    <form class="formulario">
-        <h1>Iniciar Sesion</h1>
-         <div class="contenedor">
-            <div class="form__I">
-              <i class="correo"></i>
-              <input type="text" placeholder="Correo Electronico"> 
-            </div> 
-            <div class="form__I">
-              <i class="Contraseña"></i>
-              <input type="password" placeholder="Contraseña">
+
+      <main>
+        <h1 class="text-center mt-5">Iniciar Sesión</h1>
+    
+        <form class="w-40 m-auto" action="" method="POST">
+            <div class="mb-3">
+                <label class="form-label" for="">Usuario</label>
+                <input class="form-control" type="text" name="usr" id="usr" placeholder="Cedula">
             </div>
-            <input type="submit" value="Iniciar Sesion" class="button">
-            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-            <p>¿No tienes una cuenta? <a class="link" href="registrarse.html">Registrate </a></p>
-         </div>
+            <div class="mb-3">
+                <label class="form-label" for="">Clave</label>
+                <input class="form-control" type="password" name="pass" id="pass" placeholder="Contraseña">
+            </div>
+            <div class="mb-3 d-grid gap-2">
+                <input class="btn btn-dark" type="submit" value="Iniciar Sesión">
+            </div>
+            <div class="mb-3 d-grid gap-2">
+                <a class="btn btn-outline-dark" href="registrarse.php">Registrarse</a>
+            </div>
         </form>
     </main>
 
