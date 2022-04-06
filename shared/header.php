@@ -38,13 +38,13 @@
             <a class="nav-link first_nav" href="servicios.html">Servicios</a>
             <a class="nav-link first_nav" href="servicios.html">Servicios</a>
             <a href="registrarse.html"><inpu class="btn btn-primary me-md-2" type="button" value="">Registrarse</a>
-            <a href="IniciarSesion.html"><inpu class="btn btn-primary me-md-2" type="button" value="">IniciarSesion</a>
+            <a href="IniciarSesion.php"><inpu class="btn btn-primary me-md-2" type="button" value="">IniciarSesion</a>
             
         </div>
         <div class="background2">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">
+                  <a class="nav-link active" aria-current="page" href="index.php">
                   <img id="imgLogo" src="img/Fernando_Logo.png" alt="Logo_inicio"> 
                   </a> 
                 </li>
