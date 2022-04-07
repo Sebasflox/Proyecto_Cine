@@ -1,7 +1,7 @@
 <footer>
-      <div>
+      <div style=" text-align: center;">
         <div style="width: 100%; text-align: center; border-bottom: solid 2px red; margin-bottom: 13px; position: relative;" >
-          <img id="imgLogo" src="img/Fernando_Logo.png" style="padding-bottom: -50%; position: absolute; bottom: -23px; left: 39%; right: 0;" alt="Logo_inicio">
+          <img id="imgLogo" src="img/Fernando_Logo.png" style="padding-bottom: -50%; position: absolute; bottom: -23px; left: 45%; right: 0;" alt="Logo_inicio">
         </div>
         <div class="container">
           <div class="row">
