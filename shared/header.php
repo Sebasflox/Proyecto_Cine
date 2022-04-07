@@ -17,12 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
 
-    <script>
-     
-      $(document).on('click', 'btn-modal', function(){
-        $('#modal1').modal('show');
-      });
-    </script>
+
 
 
 </head>
@@ -37,7 +32,7 @@
         <div class="d-grid gap-2 d-md-flex justify-content-md-end background">
             <a class="nav-link first_nav" href="servicios.html">Servicios</a>
             <a class="nav-link first_nav" href="servicios.html">Servicios</a>
-            <a href="registrarse.html"><inpu class="btn btn-primary me-md-2" type="button" value="">Registrarse</a>
+            <a href="registrarse.php"><inpu class="btn btn-primary me-md-2" type="button" value="">Registrarse</a>
             <a href="IniciarSesion.php"><inpu class="btn btn-primary me-md-2" type="button" value="">IniciarSesion</a>
             
         </div>
