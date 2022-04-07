@@ -41,7 +41,7 @@
                   </a> 
                 </li>
                 <li class="nav-item">
-                  <a id="nav_text" class="nav-link Texto" href="contactenos.html">Contactenos</a>
+                  <a id="nav_text" class="nav-link Texto" href="contactenos.php">Contactenos</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a id="nav_text" class="nav-link dropdown-toggle Texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
