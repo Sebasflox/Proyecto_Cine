@@ -20,8 +20,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src = "js/peti_ajax.js" ></script>
     <script src = "js/peti_ajax2.js" ></script>
-
-
+    <script src = "js/peti_ajax3.js" ></script>
+    <script src = "js/peti_ajax4.js" ></script>
+    <script src = "js/peti_ajax5.js" ></script>
 </head>
 
 <!--Botones-->

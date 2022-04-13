@@ -4,13 +4,13 @@
       
       <div class="col-6 form__R">
         <section id="Registro">
-          <form action="" id="formulario" method="POST">
-            <label class="Texto">Administración de salas</label>
+          <form action="" id="formularioP" method="POST">
+            <label class="Texto">Administración de películas</label>
             
             <div class="row">
               <div class="col">
               <label class="Texto">Tipo</label>
-                <input type="text" class="form-control" name="tipo" id="tipo" placeholder="Tipo">
+                <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Tipo">
               </div>
             </div>
             <div class="row">
@@ -35,12 +35,6 @@
               <div class="col">
               <label class="Texto">Clasificación</label>
                 <input type="text" class="form-control" name="clasificacion" id="clasificación" placeholder="Clasificación">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-              <label class="Texto">Actores</label>
-                <input type="text" class="form-control" name="actores" id="actores" placeholder="Actores">
               </div>
             </div>
             <div class="row">
@@ -81,10 +75,44 @@
             </div>
           </form>
         </section>
-        <button type="submit" name="crear" id="crear" class="btn btn-primary" >Enviar</button>
+        <button type="submit" name="crearar" id="crearar" class="btn btn-primary" >Enviar</button>
     </div>
 </div>
    
 </main>
+
+<?php
+include 'Model/rp.php';
+
+        if ($_POST){
+
+            $c = new clsPelicula();
+
+            $c -> titulo = $_POST['titulo'];
+            $c -> actor = $_POST['actores'];
+            $c -> director = $_POST['director'];
+            $c -> poster = $_POST['poster'];
+            $c -> clasificacion = $_POST['clasificacion'];
+            $c -> duracion = $_POST['duracion'];
+            $c -> genero = $_POST['genero'];
+            $c -> idioma = $_POST['idioma'];
+            $c -> sinopsis = $_POST['sinopsis'];
+            $c -> trailer = $_POST['trailer'];
+            $c -> estado = $_POST['estado'];
+            $c -> insertar();
+        }
+
+
+    ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#crearar').on('click', function(e){
+                e.preventDefault();
+                agregarPelicula();
+            });
+
+        });
+    </script>
 
 <?php include "shared/footer.php" ?>
