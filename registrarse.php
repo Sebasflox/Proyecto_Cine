@@ -3,57 +3,70 @@
     <main>
       
       <div class="col-6 form__R">
-        <section id="Registro">
-          <form>
-            <label class="Texto">Registrarse</label>
+        <section id="1">
+          <form action="" id="1" method="POST">
+            <label class="Texto">Registrweqeqwearse</label>
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido1">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre">
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido2">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Cedula">
+                <input type="text" class="form-control" name="cedula" id="cedula" placeholder="cedula">
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="Fecha">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Telefono">
+                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="telefono">
               </div>
             </div>
-            <label class="Texto">Email de acceso</label>
+            <label class="Texto">Email acceso</label>
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="Correo Electronico">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Confirmar correo">
+                <input type="text" class="form-control" name="email" id="email" placeholder="email">
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="contraseña">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="confirmar contraseña">
+                <input type="text" class="form-control" name="clave" id="clave" placeholder="clave">
               </div>
             </div>
           </form>
         </section>
-        <button type="submit" class="btn btn-primary" >Enviar</button>
+        <button type="submit" name="crear" id="crear" class="btn btn-primary" >Enviar</button>
     </div>
 </div>
 
+<?php 
+
+include 'Model/Conexion.php';
+
+        if ($_POST){
+
+            $c = new clsConexion();
+
+            $c -> cedula = $_POST['cedula'];
+            $c -> nombre = $_POST['nombre'];
+            $c -> telefono = $_POST['telefono'];
+            $c -> email = $_POST['email'];
+            $c -> clave = md5($_POST['clave']);
+            $c -> insertar();
+        }
+
+
+    ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#crear').on('click', function(e){
+                e.preventDefault();
+                agregardatos();
+            });
+
+        });
+    </script>
    
-    </main>
+</main>
 
 <?php include "shared/footer.php" ?>

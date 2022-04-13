@@ -3,19 +3,20 @@
 include 'adodb5/adodb.inc.php';
 include 'adodb5/adodb-exceptions.inc.php';
 
-class Conexion{
+class clsConexion{
 
     public $cedula;
     public $nombre;
     public $telefono;
     public $email;
     public $clave;
+    public $tipo = true;
 
     public function conexion(){
 
         $server = 'localhost';
-        $usr='user';
-        $pass='123';
+        $usr='root';
+        $pass='';
         $bd='bdproyecto';
 
         $db = newAdoConnection("mysqli");
@@ -26,8 +27,8 @@ class Conexion{
     }
 
     public function insertar(){
-        
-        $tabla = 'registro_cine';
+
+        $tabla = 'cliente';
 
         $registro = array();
         $registro["Cedula"] = $this -> cedula;
@@ -35,6 +36,7 @@ class Conexion{
         $registro["Telefono"] = $this -> telefono;
         $registro["Email"] = $this -> email;
         $registro["Clave"] = $this -> clave;
+        $registro["Tipo"] = $this -> tipo;
 
         try{
             $db = $this -> conexion();
@@ -49,26 +51,27 @@ class Conexion{
 
 
     public function consultar(){
-        
-        $sql = "select * from registro_cine";
+
+        $sql = "select * from cliente";
         $db = $this -> conexion();
 
         $registros = $db -> execute($sql);
         $contactos = array();
 
         while ($r = $registros -> fetchRow()){
-            $c = new Conexion();
-            
+            $c = new clsConexion();
+
             $c -> cedula = $r[0];
             $c -> nombre = $r[1];
             $c -> telefono = $r[2];
             $c -> email = $r[3];
             $c -> clave = $r[4];
+            $c -> tipo = $r[5];
 
             $contactos[] = $c;
 
         }
-        echo json_encode($contactos)
+        echo json_encode($contactos);
     }
 }
 ?>
