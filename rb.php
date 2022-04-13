@@ -4,7 +4,7 @@
       
       <div class="col-6 form__R" style="text-align-center; justify-content: center;">
         <section id="Registro">
-          <form action="" id="formulario" method="POST">
+          <form action="" id="formularioB" method="POST">
             <label class="Texto">Administración de banners</label>
             <div class="mb-3">
             <label for="formFile" class="form-label">Imagen de la pelicula</label>
@@ -30,12 +30,39 @@
             </div>
           </form>
         </section>
-        <button type="submit" name="crear" id="crear" class="btn btn-primary" >Enviar</button>
+        <button type="submit" name="crearH" id="crearB" class="btn btn-primary" >Enviar</button>
     </div>
 </div>
 
 
    
 </main>
+
+<?php
+include 'Model/rb.php';
+
+        if ($_POST){
+
+            $c = new clsBanner();
+
+            $c -> titulo = $_POST['Titulo'];
+            $c -> fecha = $_POST['Imagen'];
+            $c -> imagen = $_POST['publicacion'];
+            $c -> estado = $_POST['Estado'];
+            $c -> insertar();
+        }
+
+
+    ?>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#crearB').on('click', function(e){
+                e.preventDefault();
+                agregarBanner();
+            });
+
+        });
+    </script>
 
 <?php include "shared/footer.php" ?>

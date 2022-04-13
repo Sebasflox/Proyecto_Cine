@@ -23,6 +23,7 @@
     <script src = "js/peti_ajax3.js" ></script>
     <script src = "js/peti_ajax4.js" ></script>
     <script src = "js/peti_ajax5.js" ></script>
+    <script src = "js/peti_ajax6.js" ></script>
 </head>
 
 <!--Botones-->
