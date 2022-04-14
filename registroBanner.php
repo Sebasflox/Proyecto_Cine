@@ -1,5 +1,15 @@
 <?php include "shared/header.php" ?>
+<?php 
+    //error_reporting(0);
+    session_start();
+    $ini = $_SESSION['usuario'];
 
+    if($ini == null || $ini = ''){
+      echo 'Usted no tiene autorizacion';
+      die();
+    }
+
+?>
     <main>
       
       <div class="col-6 form__R" style="text-align-center; justify-content: center;">
@@ -30,7 +40,7 @@
             </div>
           </form>
         </section>
-        <button type="submit" name="crearH" id="crearB" class="btn btn-primary" >Enviar</button>
+        <button type="submit" name="crearB" id="crearB" class="btn btn-primary" >Enviar</button>
     </div>
 </div>
 
@@ -39,15 +49,15 @@
 </main>
 
 <?php
-include 'Model/rb.php';
+include 'Model/registrarBanner.php';
 
         if ($_POST){
 
             $c = new clsBanner();
 
             $c -> titulo = $_POST['Titulo'];
-            $c -> fecha = $_POST['Imagen'];
-            $c -> imagen = $_POST['publicacion'];
+            $c -> fecha = $_POST['publicacion'];
+            $c -> imagen = $_POST['Imagen'];
             $c -> estado = $_POST['Estado'];
             $c -> insertar();
         }

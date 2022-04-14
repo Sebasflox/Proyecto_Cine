@@ -4,7 +4,7 @@
       
       <div class="col-6 form__R">
         <section id="1">
-          <form action="" id="1" method="POST">
+          <form action="" id="formulario" method="POST">
             <label class="Texto">Registrweqeqwearse</label>
             <div class="row">
               <div class="col">
@@ -40,7 +40,7 @@
 
 <?php 
 
-include 'Model/Conexion.php';
+include 'Model/conexion.php';
 
         if ($_POST){
 

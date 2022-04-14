@@ -4,17 +4,17 @@
       <main>
         <h1 class="text-center mt-5">Iniciar Sesión</h1>
     
-        <form class="w-40 m-auto" action="" method="POST">
+        <form class="w-40 m-auto" id="formularioL" action="">
             <div class="mb-3">
-                <label class="form-label" for="">Usuario</label>
+                <label class="form-label" for="">Cedula</label>
                 <input class="form-control" type="text" name="usr" id="usr" placeholder="Cedula">
             </div>
             <div class="mb-3">
-                <label class="form-label" for="">Clave</label>
+                <label class="form-label" for="">Contraseña</label>
                 <input class="form-control" type="password" name="pass" id="pass" placeholder="Contraseña">
             </div>
             <div class="mb-3 d-grid gap-2">
-                <input class="btn btn-dark" type="submit" value="Iniciar Sesión">
+                <input class="btn btn-dark" type="submit"  name = "iniciar_sesion" id="iniciar_sesion" value="Iniciar Sesión">
             </div>
             <div class="mb-3 d-grid gap-2">
                 <a class="btn btn-outline-dark" href="registrarse.php">Registrarse</a>
