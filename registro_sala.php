@@ -35,7 +35,7 @@
 
 <?php 
 
-include 'Model/registroSala.php';
+include 'Model/registrarSala.php';
 
         if ($_POST){
 

@@ -40,7 +40,7 @@
 </main>
 
 <?php
-include 'Model/rh.php';
+include 'Model/registrarHorario.php';
 
         if ($_POST){
 

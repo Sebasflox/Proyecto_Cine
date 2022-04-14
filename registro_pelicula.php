@@ -82,7 +82,7 @@
 </main>
 
 <?php
-include 'Model/registarPelicula.php';
+include 'Model/registrarPelicula.php';
 
         if ($_POST){
 
