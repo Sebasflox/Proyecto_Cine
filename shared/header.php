@@ -18,13 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src = "js/peti_ajax.js" ></script>
-    <script src = "js/peti_ajax2.js" ></script>
-    <script src = "js/peti_ajax3.js" ></script>
-    <script src = "js/peti_ajax4.js" ></script>
-    <script src = "js/peti_ajax5.js" ></script>
-    <script src = "js/peti_ajax6.js" ></script>
-    <script src = "js/peti_ajax7.js" ></script>
+    <script src = "js/peticion_banner.js" ></script>
+    <script src = "js/peticion_horario.js" ></script>
+    <script src = "js/peticion_pelicula.js" ></script>
+    <script src = "js/peticion_sala.js" ></script>
+    <script src = "js/peticion_banner.js" ></script>
+    <script src = "js/validar_login.js" ></script>
 </head>
 
 <!--Botones-->
