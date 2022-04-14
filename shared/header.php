@@ -24,6 +24,7 @@
     <script src = "js/peticion_sala.js" ></script>
     <script src = "js/peticion_banner.js" ></script>
     <script src = "js/validar_login.js" ></script>
+    <script src = "js/registrar_cliente.js" ></script>
 </head>
 
 <!--Botones-->

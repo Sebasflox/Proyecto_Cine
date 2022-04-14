@@ -10,7 +10,6 @@ class clsHorario{
     public $hora;
     public $sala;
     public $precio;
-    public $titulo = "1";
 
     public function conexion(){
 
@@ -31,7 +30,7 @@ class clsHorario{
         $tabla = 'horario';
 
         $registro = array();
-        $registro["Titulo"] = $this -> titulo;
+        $registro["Titulo"] = $_SESSION["Titulo"];
         $registro["Fecha"] = $this -> fecha;
         $registro["Hora"] = $this -> hora;
         $registro["Sala"] = $this -> sala;
@@ -45,6 +44,7 @@ class clsHorario{
             $respuesta["operacion"] = 0;
         }
         echo json_encode($respuesta);
+        return json_encode($respuesta);
     }
 }
 ?>

@@ -5,10 +5,10 @@ function agregarPelicula(){
     $.ajax({
         
         method:"POST",
-        url:"/administracion/registro_pelicula.php",
+        url:"registro_pelicula.php",
         data: datos,
         success: function(e){
         }  
     });
-
+    location.href ="/Proyecto/Proyecto_cine/registro_horario.php";
 }

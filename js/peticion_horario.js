@@ -5,10 +5,11 @@ function agregarHorario(){
     $.ajax({
         
         method:"POST",
-        url:"/administracion/registro_horario.php",
+        url:"registro_horario.php",
         data: datos,
         success: function(e){
         }  
+        
     });
-
+    //location.href ="/Proyecto/Proyecto_cine/registro_sala.php";
 }

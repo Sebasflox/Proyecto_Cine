@@ -1,7 +1,10 @@
 <?php include "shared/header.php" ?>
-
+<?php
+ print_r( $_SESSION["Titulo"]);
+ exit();
+?>
     <main>
-      
+   
       <div class="col-6 form__R">
         <section id="Registro">
           <form action="" id="formularioh" method="POST">
@@ -31,9 +34,10 @@
                 <input type="text" class="form-control" name="precio" id="precio" placeholder="Precio">
               </div>
             </div>
+            <button type="submit" name="crearH" id="crearH" class="btn btn-primary" >Enviar</button>
           </form>
         </section>
-        <button type="submit" name="crearH" id="crearH" class="btn btn-primary" >Enviar</button>
+        
     </div>
 </div>
    
@@ -50,7 +54,8 @@ include 'Model/registrarHorario.php';
             $c -> hora = $_POST['hora'];
             $c -> sala = $_POST['sala'];
             $c -> precio = $_POST['precio'];
-            $c -> insertar();
+            print_r($c -> insertar());
+            exit();
         }
 
 
@@ -59,7 +64,7 @@ include 'Model/registrarHorario.php';
     <script type="text/javascript">
         $(document).ready(function(){
             $('#crearH').on('click', function(e){
-                e.preventDefault();
+
                 agregarHorario();
             });
 

@@ -1,5 +1,4 @@
 <?php include "shared/header.php" ?>
-
     <main>
       
       <div class="col-6 form__R">
@@ -9,7 +8,7 @@
             
             <div class="row">
               <div class="col">
-              <label class="Texto">Tipo</label>
+              <label class="Texto">Titulo</label>
                 <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Tipo">
               </div>
             </div>
@@ -100,6 +99,7 @@ include 'Model/registrarPelicula.php';
             $c -> trailer = $_POST['trailer'];
             $c -> estado = $_POST['estado'];
             $c -> insertar();
+
         }
 
 

@@ -37,6 +37,7 @@ class clsPelicula{
 
         $registro = array();
         $registro["Titulo"] = $this -> titulo;
+        $_SESSION["Titulo"] = $this -> titulo;
         $registro["Actores_principales"] = $this -> actor;
         $registro["Director"] = $this -> director;
         $registro["Poster"] = $this -> poster;

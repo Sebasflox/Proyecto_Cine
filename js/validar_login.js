@@ -3,24 +3,26 @@ jQuery(document).on('submit','#formularioL', function(event){
 
     jQuery.ajax({
         url: "validar.php",
-        type: 'POST',
-        dataType: 'json',
-        data: $(this).serialize(),
-        beforesend: function(){
-        }
-
+        method: 'POST',
+        data: $(this).serialize()
     })
-    .done(function(respuesta) {
-        if(respuesta == 1){
-            location.href ="/Proyecto/Proyecto_cine/index.php";
-        } else if(respuesta == 2){
-            alert("Usuario no existe");
-        }
-    })
-    .fail(function (resp) {
-        console.log(resp.responseText);
-    })
-    .always(function() {
-        console.log("complete");
+        .done(function(respuesta) {
+            respuesta = JSON.parse(respuesta);
+            if(respuesta["CEDULA"]!= null){
+                if(respuesta["TIPO"]== 1) {
+                    location.href ="/Proyecto/Proyecto_cine/index.php";
+                } else{
+                    location.href ="/Proyecto/Proyecto_cine/registro_pelicula.php";
+                }
+            } else{
+                alert("#s");
+            }
+            
+        })
+        .fail(function (resp) {
+            console.log("error");
+        })
+        .always(function() {
+            console.log("complete");
+        });
     });
-});
