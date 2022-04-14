@@ -5,7 +5,7 @@ function agregarPelicula(){
     $.ajax({
         
         method:"POST",
-        url:"rp.php",
+        url:"/administracion/registro_pelicula.php",
         data: datos,
         success: function(e){
         }  

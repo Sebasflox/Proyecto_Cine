@@ -5,7 +5,7 @@ function agregarBanner(){
     $.ajax({
         
         method:"POST",
-        url:"rb.php",
+        url:"/administracion/registro_banner.php",
         data: datos,
         success: function(e){
         }  

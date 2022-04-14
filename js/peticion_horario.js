@@ -5,7 +5,7 @@ function agregarHorario(){
     $.ajax({
         
         method:"POST",
-        url:"rh.php",
+        url:"/administracion/registro_horario.php",
         data: datos,
         success: function(e){
         }  

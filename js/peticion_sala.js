@@ -5,7 +5,7 @@ function agregarSala(){
     $.ajax({
         
         method:"POST",
-        url:"rs.php",
+        url:"/administracion/registro_sala.php",
         data: datos,
         success: function(e){
         }  
