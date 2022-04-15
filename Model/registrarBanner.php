@@ -31,7 +31,7 @@ class clsBanner{
 
         $registro = array();
         $registro["Titulo"] = $this -> titulo;
-        $registro["Fecha_publicacion"] = $this -> fecha;
+        $registro["Fecha"] = $this -> fecha;
         $registro["Imagen"] = $this -> imagen;
         $registro["Estado"] = $this -> estado;
         try{

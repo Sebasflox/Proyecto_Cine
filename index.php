@@ -3,32 +3,34 @@
 
 
 <!--Carusel 1-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img id="imgCarusel" src="img/BatMan.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img id="imgCarusel" src="img/Spider.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img id="imgCarusel" src="img/Uncharted.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <?php 
+
+      include "Model/conexion.php";
+        $con = new clsConexion;
+        $db = $con->conexion();
+        $slider = 'Select * from sliders LIMIT 3';
+        $resultado_S = $db-> query($slider);
+      ?>
+      <div class = 'row'>
+        <div class='col-lg-12'>
+          <div id='myCarousel' class='carousel slide' data-ride='carousel'>
+            <ol class='carousel-indicators'>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          <div class='carousel-inner'>
+            <?php 
+              while($row = mysqli_fetch_array($resultado_S)){
+                echo "<div class='carousel-item ".$row['activo']."  '>";
+                echo "<img scr='img/".$row['Imagen']."' class='".$row['clase']."' alt='".$row['Titulo']."'>";
+
+          echo "</div>";
+
+        echo"</div>";
+      echo"</div>";
+              }
+              ?>
 
       <h2><p>Cartelera Semanal</p></h2>
       

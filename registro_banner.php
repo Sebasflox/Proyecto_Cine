@@ -1,29 +1,19 @@
 <?php include "shared/header.php" ?>
-<?php 
-    //error_reporting(0);
-    session_start();
-    $ini = $_SESSION['usuario'];
 
-    if($ini == null || $ini = ''){
-      echo 'Usted no tiene autorizacion';
-      die();
-    }
-
-?>
     <main>
       
       <div class="col-6 form__R" style="text-align-center; justify-content: center;">
         <section id="Registro">
-          <form action="" id="formularioB" method="POST">
+          <form action="" id="formularioB" method="POST" enctype="multipart/form-data ">
             <label class="Texto">Administración de banners</label>
             <div class="mb-3">
             <label for="formFile" class="form-label">Imagen de la pelicula</label>
-            <input class="form-control" type="file" name="Imagen" id="Imagen" >
+            <input class="form-control" type="file" name="imagen" id="imagen" >
             </div>
             <div class="row">
               <div class="mb-3">
               <label class="Texto">Titulo</label>
-                <input type="text" class="form-control" name="Titulo" id="Titulo" placeholder="Titulo">
+                <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Titulo">
               </div>
             </div>
             <div class="row">
@@ -35,12 +25,13 @@
             <label class="Texto">Estado</label>
             <div class="row">
               <div class="mb-3">
-                <input type="text" class="form-control" name="Estado" id="Estado" placeholder="Estado">
+                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado">
               </div>
             </div>
+            <button type="submit" name="crearB" id="crearB" class="btn btn-primary" >Enviar</button>
           </form>
         </section>
-        <button type="submit" name="crearB" id="crearB" class="btn btn-primary" >Enviar</button>
+       
     </div>
 </div>
 
@@ -55,10 +46,10 @@ include 'Model/registrarBanner.php';
 
             $c = new clsBanner();
 
-            $c -> titulo = $_POST['Titulo'];
+            $c -> titulo = $_POST['titulo'];
             $c -> fecha = $_POST['publicacion'];
-            $c -> imagen = $_POST['Imagen'];
-            $c -> estado = $_POST['Estado'];
+            $c -> imagen= $_POST["imagen"];
+            $c -> estado = $_POST['estado'];
             $c -> insertar();
         }
 
