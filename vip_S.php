@@ -1,5 +1,8 @@
 <?php 
-  include 'Model/conexion.php'
+  include 'Model/conexion.php';
+  $conexion = new clsConexion();
+  $db = $conexion->conexion();
+    
   $pelicula = $_GET['variable'] 
 
   $infoPeli = 'select * from pelicula where Titulo = "'.$pelicula.'"';
