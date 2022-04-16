@@ -15,15 +15,8 @@
               include 'slider.php';
 
               while($row = $resultado_S->fetchRow()){
-<<<<<<< HEAD
           echo '<div class="carousel-item '.$row["activo"].'">';
             echo'<img id="imgCarusel" src="img/'.$row["Imagen"].'" class=" '.$row["clase"].' d-block w-100" alt="'.$row["Titulo"].'">';
-=======
-
-
-          echo '<div class="carousel-item '.$row["ACTIVO"].'">';
-            echo'<img id="imgCarusel" src="img/'.$row["FOTO"].'" class=" '.$row["CLASE"].' d-block w-100" alt="'.$row["TITULO"].'">';
->>>>>>> af1e093e68f26cdabe1584eebc336bad626588f8
           echo'</div>';
               }
               ?>
@@ -62,7 +55,7 @@
             <button class="btn btn-primary leftLst"><</button>
             <button class="btn btn-primary rightLst">></button>
         </div>
-	</div>  
+	</div>
 
 </div>
 
