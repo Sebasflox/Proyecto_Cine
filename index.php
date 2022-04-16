@@ -44,9 +44,10 @@
                 echo '<div class="pad15">';
                 echo '<a href="vip_s.php?variable='.$row2["Titulo"].'" ><img src="img/'.$row2["Poster"].'"  class="img-fluid" alt="'.$row2["Titulo"].'"></a>';
                    echo '<p class="lead">'.$row2["Titulo"].'</p>';
-                   echo '<p>₹ 1</p>';
-                   echo '<p>₹ 6000</p>';
-                   echo '<p>50% off</p>';
+                   echo '<p>Director</p>';
+                   echo '<p>'.$row2["Director"].'</p>';
+                   echo '<p>Actores principales</p>';
+                   echo '<p>'.$row2["Actores_principales"].'</p>';
                 echo '</div>';
                 echo '</div>';
                 }
