@@ -17,8 +17,8 @@
               while($row = $resultado_S->fetchRow()){
 
 
-          echo '<div class="carousel-item '.$row["activo"].'">';
-            echo'<img id="imgCarusel" src="img/'.$row["Imagen"].'" class=" '.$row["clase"].' d-block w-100" alt="'.$row["Titulo"].'">';
+          echo '<div class="carousel-item '.$row["ACTIVO"].'">';
+            echo'<img id="imgCarusel" src="img/'.$row["FOTO"].'" class=" '.$row["CLASE"].' d-block w-100" alt="'.$row["TITULO"].'">';
           echo'</div>';
               }
               ?>
@@ -40,21 +40,22 @@
 	<div class="row">
 		<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
             <div class="MultiCarousel-inner">
-                <?php 
-                echo'<div class="item">';
-                echo '<div class="pad15">';
-                   echo '<p class="lead">Multi Item Carousel</p>';
-                   echo '<p>₹ 1</p>';
-                   echo '<p>₹ 6000</p>';
+               
+                <div class="item">
+                 <div class="pad15">
+                 <img src="img/Uncharted.png" class="img-fluid" alt="...">
+                  <p class="lead">Multi Item Carousel</p>
+                    <p>₹ 1</p>
+                    <p>₹ 6000</p>
                     <p>50% off</p>
                 </div>
                 </div>
-                ?>
+                
             </div>
             <button class="btn btn-primary leftLst"><</button>
             <button class="btn btn-primary rightLst">></button>
         </div>
-	</div>
+	</div>  
 
 </div>
 
