@@ -15,8 +15,6 @@
               include 'slider.php';
 
               while($row = $resultado_S->fetchRow()){
-
-
           echo '<div class="carousel-item '.$row["activo"].'">';
             echo'<img id="imgCarusel" src="img/'.$row["Imagen"].'" class=" '.$row["clase"].' d-block w-100" alt="'.$row["Titulo"].'">';
           echo'</div>';
@@ -41,14 +39,17 @@
 		<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
             <div class="MultiCarousel-inner">
                 <?php 
+                while($row2 = $resultado_C->fetchRow()){
                 echo'<div class="item">';
                 echo '<div class="pad15">';
-                   echo '<p class="lead">Multi Item Carousel</p>';
+                echo '<a href="IniciarSesion.php" ><img src="img/'.$row2["Poster"].'"  class="img-fluid" alt="'.$row2["Titulo"].'"></a>';
+                   echo '<p class="lead">'.$row2["Titulo"].'</p>';
                    echo '<p>₹ 1</p>';
                    echo '<p>₹ 6000</p>';
-                    <p>50% off</p>
-                </div>
-                </div>
+                   echo '<p>50% off</p>';
+                echo '</div>';
+                echo '</div>';
+                }
                 ?>
             </div>
             <button class="btn btn-primary leftLst"><</button>
