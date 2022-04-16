@@ -63,7 +63,7 @@ a{
 }
 
 .carousel-inner{
-    height: 650px !important;
+    height: 550px !important;
     text-align: center;
 }
 /* .imgCartel {
@@ -71,3 +71,7 @@ a{
     height: 70%;
 }*/
 
+#imgCarusel{
+    width: max-content;
+    height: max-content;
+}

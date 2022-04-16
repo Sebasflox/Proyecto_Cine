@@ -1,8 +1,5 @@
 <?php include "shared/header.php" ?>
-<?php
- print_r( $_SESSION["Titulo"]);
- exit();
-?>
+
     <main>
    
       <div class="col-6 form__R">
@@ -10,6 +7,22 @@
           <form action="" id="formularioh" method="POST">
             <label class="Texto">Administración de horarios</label>
             
+            <div class="row">
+              <div class="col">
+              <label class="Texto">
+                <select name="titulo" id="titulo">
+                  <?php 
+                    include 'select.php';
+                    foreach ($resultado_P as $opciones):
+                    ?>
+                     <option value="<?php echo $opciones['Titulo']; ?>" ><?php echo $opciones['Titulo']; ?><option>
+                  <?php endforeach 
+                  
+                  ?>
+                </select> 
+              </label>
+              </div>
+            </div>
             <div class="row">
               <div class="col">
               <label class="Texto">Fecha</label>
@@ -44,18 +57,17 @@
 </main>
 
 <?php
-include 'Model/registrarHorario.php';
-
+      
+      
         if ($_POST){
-
+            include 'Model/registrarHorario.php';
             $c = new clsHorario();
-
+            $c -> titulo = $_POST['titulo'];
             $c -> fecha = $_POST['fecha'];
             $c -> hora = $_POST['hora'];
             $c -> sala = $_POST['sala'];
             $c -> precio = $_POST['precio'];
-            print_r($c -> insertar());
-            exit();
+            $c -> insertar();
         }
 
 
@@ -64,7 +76,7 @@ include 'Model/registrarHorario.php';
     <script type="text/javascript">
         $(document).ready(function(){
             $('#crearH').on('click', function(e){
-
+              e.preventDefault();
                 agregarHorario();
             });
 

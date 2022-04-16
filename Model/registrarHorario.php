@@ -1,11 +1,9 @@
 <?php 
 
-include 'adodb5/adodb.inc.php';
-include 'adodb5/adodb-exceptions.inc.php';
 
 class clsHorario{
 
-
+    public $titulo;
     public $fecha;
     public $hora;
     public $sala;
@@ -30,7 +28,7 @@ class clsHorario{
         $tabla = 'horario';
 
         $registro = array();
-        $registro["Titulo"] = $_SESSION["Titulo"];
+        $registro["Titulo"] = $this->titulo;
         $registro["Fecha"] = $this -> fecha;
         $registro["Hora"] = $this -> hora;
         $registro["Sala"] = $this -> sala;
