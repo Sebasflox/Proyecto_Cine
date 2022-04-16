@@ -10,9 +10,9 @@ jQuery(document).on('submit','#formularioL', function(event){
             respuesta = JSON.parse(respuesta);
             if(respuesta["CEDULA"]!= null){
                 if(respuesta["TIPO"]== 1) {
-                    location.href ="/Proyecto/Proyecto_cine/index.php";
+                    location.href ="/Cine_Fernando/index.php";
                 } else{
-                    location.href ="/Proyecto/Proyecto_cine/registro_pelicula.php";
+                    location.href ="/Cine_Fernando/registro_pelicula.php";
                 }
             } else{
                 alert("#s");
