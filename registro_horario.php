@@ -47,6 +47,18 @@
                 <input type="text" class="form-control" name="precio" id="precio" placeholder="Precio">
               </div>
             </div>
+            <div class="row">
+              <div class="col">
+              <label class="Texto">Asiento</label>
+                <input type="text" class="form-control" name="asiento" id="asiento" placeholder="Asiento">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+              <label class="Texto">Estado</label>
+                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado">
+              </div>
+            </div>
             <button type="submit" name="crearH" id="crearH" class="btn btn-primary" >Enviar</button>
           </form>
         </section>
@@ -67,6 +79,8 @@
             $c -> hora = $_POST['hora'];
             $c -> sala = $_POST['sala'];
             $c -> precio = $_POST['precio'];
+            $c -> asiento = $_POST['asiento'];
+            $c -> estado = $_POST['estado'];
             $c -> insertar();
         }
 

@@ -8,6 +8,8 @@ class clsHorario{
     public $hora;
     public $sala;
     public $precio;
+    public $asiento;
+    public $estado;
 
     public function conexion(){
 
@@ -33,6 +35,10 @@ class clsHorario{
         $registro["Hora"] = $this -> hora;
         $registro["Sala"] = $this -> sala;
         $registro["Precio"] = $this -> precio;
+        $registro["Asiento"] = $this -> asiento;
+        $registro["Estado"] = $this -> estado;
+
+
         try{
             $db = $this -> conexion();
             $db -> autoExecute($tabla, $registro, 'INSERT');
@@ -44,5 +50,6 @@ class clsHorario{
         echo json_encode($respuesta);
         return json_encode($respuesta);
     }
+    
 }
 ?>

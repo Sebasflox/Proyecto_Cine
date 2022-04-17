@@ -10,5 +10,5 @@ function agregarPelicula(){
         success: function(e){
         }  
     });
-    location.href ="/Proyecto/Proyecto_cine/registro_horario.php";
+    location.href ="/Cine_Fernando/registro_horario.php";
 }
