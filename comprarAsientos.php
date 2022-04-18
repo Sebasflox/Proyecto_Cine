@@ -10,6 +10,7 @@
 
   $infoPeli = 'select * from asientos_disponibles where Titulo = "'.$var.'"';
   $infoPeliFinal = $db->query($infoPeli);
+  $cont = 1;
 while($row4 = $infoPeliFinal->fetchRow()){
     if($row4["Estado"]){
       echo '<button class="bluie" data-id="'.$row4["Asiento"].'" Onclick="cambiarEstado(this)">'.$row4["Asiento"].'</button>';
@@ -19,6 +20,12 @@ while($row4 = $infoPeliFinal->fetchRow()){
     } else{
       echo '<button class="red">'.$row4["Asiento"].'</button>';
     }
+    
+    if($cont == 5){
+      $cont = 0;
+      echo '<br>';
+    }
+    $cont++;
   }
 ?>
 <button Onclick="comprarAsientos('<?php echo $Titulo?>','<?php echo $Horario?>', '<?php echo $Sala?>')">Comprar</button>
