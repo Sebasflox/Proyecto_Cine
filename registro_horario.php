@@ -10,15 +10,13 @@
             <div class="row">
               <div class="col">
               <label class="Texto">
-                <select name="titulo" id="titulo">
+                <select class="form-select" name="titulo" id="titulo">
                   <?php 
                     include 'select.php';
-                    foreach ($resultado_P as $opciones):
+                    foreach ($resultado_P as $key => $value) {
+                      echo '<option value="'.$value["Titulo"].'">'.$value["Titulo"].'</option>';
+                    }
                     ?>
-                     <option value="<?php echo $opciones['Titulo']; ?>" ><?php echo $opciones['Titulo']; ?><option>
-                  <?php endforeach 
-                  
-                  ?>
                 </select> 
               </label>
               </div>
@@ -26,13 +24,13 @@
             <div class="row">
               <div class="col">
               <label class="Texto">Fecha</label>
-                <input type="text" class="form-control" name="fecha" id="fecha" placeholder="Fecha">
+                <input type="date" class="form-control" name="fecha" id="fecha" placeholder="Fecha">
               </div>
             </div>
             <div class="row">
               <div class="col">
               <label class="Texto">Hora</label>
-                <input type="text" class="form-control" name="hora" id="hora" placeholder="Hora">
+                <input type="time" class="form-control" name="hora" id="hora" placeholder="Hora">
               </div>
             </div>
             <div class="row">
@@ -50,16 +48,22 @@
             <div class="row">
               <div class="col">
               <label class="Texto">Asiento</label>
-                <input type="text" class="form-control" name="asiento" id="asiento" placeholder="Asiento">
+              <select class="form-select" name="asiento" id="asiento">
+                    <option value="20">Normal</option>
+                    <option value="35">Vip</option>
+                  </select>
               </div>
             </div>
             <div class="row">
               <div class="col">
               <label class="Texto">Estado</label>
-                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado">
+                  <select class="form-select" name="estado" id="estado">
+                    <option value="1">Activo</option>
+                    <option value="0">Inactivo</option>
+                  </select>
               </div>
             </div>
-            <button type="submit" name="crearH" id="crearH" class="btn btn-primary" >Enviar</button>
+            <button type="submit" name="crearH" id="crearH"  class="btn btn-primary" >Enviar</button>
           </form>
         </section>
         
@@ -82,6 +86,7 @@
             $c -> asiento = $_POST['asiento'];
             $c -> estado = $_POST['estado'];
             $c -> insertar();
+            
         }
 
 
@@ -91,7 +96,20 @@
         $(document).ready(function(){
             $('#crearH').on('click', function(e){
               e.preventDefault();
-                agregarHorario();
+              $.ajax({
+                
+                method:"POST",
+                url:"generador.php",
+                data: {Titulo: document.getElementById("titulo").value,
+                  cantidadAsientos: document.getElementById("asiento").value,
+                  Sala: document.getElementById("sala").value,
+                  Estado: document.getElementById("estado").value,
+                  Horario: document.getElementById("hora").value},
+                success: function(e){
+                  console.log(e);
+                  agregarHorario();
+                }  
+            });
             });
 
         });

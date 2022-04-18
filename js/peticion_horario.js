@@ -13,3 +13,4 @@ function agregarHorario(){
     });
     //location.href ="/Proyecto/Proyecto_cine/registro_sala.php";
 }
+

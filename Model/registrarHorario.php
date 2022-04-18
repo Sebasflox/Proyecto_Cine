@@ -38,7 +38,7 @@ class clsHorario{
         $registro["Asiento"] = $this -> asiento;
         $registro["Estado"] = $this -> estado;
 
-
+       
         try{
             $db = $this -> conexion();
             $db -> autoExecute($tabla, $registro, 'INSERT');
