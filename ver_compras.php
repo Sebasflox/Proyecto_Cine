@@ -2,19 +2,6 @@
 
 <main>
 
-<div id="formulario" class="m-auto">
-        <label for="">Cedula</label>
-        <input class="form-control" id="Cedula" type="number" placeholder="IdFactura" required> <br><br>
-        <label for="">Nombre</label>
-        <input class="form-control" id="Nombre" type="text" placeholder="Nombre" required> <br><br>
-        <label for="">Titulo</label>
-        <input class="form-control" id="Titulo" type="text" placeholder="Titulo" required> <br><br>
-        <label for="">Asiento</label>
-        <input class="form-control" id="Asiento" type="number" placeholder="Asiento" required> <br><br>
-        <label for="">Total</label>
-        <input class="form-control" id="Total" type="text" placeholder=" Total" required> <br><br>
-        <button id="agregar" class="btn btn-success">Guardar</button> <br><br>
-    </div>
 
     <table id="tdatos" class="lista">
       <br>
@@ -27,6 +14,28 @@
             <th>Total</th>
           
           </tr>
+          <?php 
+          include 'facturacion.php';
+          $ventas = 0;
+          while($row6 = $resultado_Factura->fetchRow()){
+            $ventas = $ventas + intval($row6['Total']);
+            echo '<tr>';
+            echo '<th>'.$row6["IdFactura"].'</th>';
+            echo '<th>'.$row6["Nombre"].'</th>';
+            echo '<th>'.$row6["Titulo"].'</th>';
+            echo '<th>'.$row6["Asiento"].'</th>';
+            echo '<th>'.$row6["Total"].'</th>';
+            
+            echo '</tr>';
+          }
+          echo '<tr>';
+            echo '<th></th>';
+            echo '<th></th>';
+            echo '<th></th>';
+            echo '<th>Total</th>';
+            echo '<th>'.$ventas.'</th>';
+            echo '</tr>';
+          ?>
         </thead>
         <tbody id="datosTabla">
         </tbody>
