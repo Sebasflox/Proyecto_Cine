@@ -1,13 +1,6 @@
 <?php include "shared/header.php" ?>
 
-<?php 
 
-include "Model/conexion.php";
-  $con = new clsConexion;
-  $db = $con->conexion();
-  $compras_Clientes = $db->query($facturas);
-  $facturas = 'select * from factura where Nombre = "Juan"';
-?>
 
 
 <main>
@@ -25,16 +18,14 @@ include "Model/conexion.php";
           
           </tr>
           <?php 
-          include 'compras_Clientes.php';
-          $ventas = 0;
-          while($row7 = $clientes_factura ->fetchRow()){
-            $ventas = $ventas + intval($row7['Total']);
+          include 'comprasCliente.php';
+          while($row8 = $compras_Clientes ->fetchRow()){
             echo '<tr>';
-            echo '<th>'.$row7["IdFactura"].'</th>';
-            echo '<th>'.$row7["Nombre"].'</th>';
-            echo '<th>'.$row7["Titulo"].'</th>';
-            echo '<th>'.$row7["Asiento"].'</th>';
-            echo '<th>'.$row7["Total"].'</th>';
+            echo '<th>'.$row8["IdFactura"].'</th>';
+            echo '<th>'.$row8["Nombre"].'</th>';
+            echo '<th>'.$row8["Titulo"].'</th>';
+            echo '<th>'.$row8["Asiento"].'</th>';
+            echo '<th>'.$row8["Total"].'</th>';
             
             echo '</tr>';
           }

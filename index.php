@@ -40,8 +40,8 @@
             <div class="MultiCarousel-inner">
                 <?php 
                 while($row2 = $resultado_C->fetchRow()){
-                echo'<div class="item">';
-                echo '<div class="pad15">';
+                echo'<div class="item pequeño">';
+                echo '<div class="pad15 fondo_pq">';
                 echo '<a href="vip_s.php?variable='.$row2["Titulo"].'" ><img src="img/'.$row2["Poster"].'"  class="img-fluid" alt="'.$row2["Titulo"].'"></a>';
                    echo '<p class="lead">'.$row2["Titulo"].'</p>';
                    echo '<p>Director</p>';

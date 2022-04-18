@@ -75,3 +75,13 @@ a{
     width: max-content;
     height: max-content;
 }
+
+.pequeño{
+    background-color: #EB0000 !important;
+}
+
+.fondo_pq{
+    background-color: rgb(32, 92, 140) !important;
+    color: white !important;
+    font-size: 15px;
+}
