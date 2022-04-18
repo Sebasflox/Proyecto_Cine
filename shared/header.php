@@ -31,6 +31,7 @@
     <script src = "js/validar_login.js" ></script>
     <script src = "js/registrar_cliente.js" ></script>
     <script src = "js/peticion_titulo.js" ></script>
+    <script src = "js/generica.js" ></script>
     <script src = "js/e.js" ></script>
 </head>
 

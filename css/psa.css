@@ -1,0 +1,15 @@
+.imagen{
+    max-width: 200px;
+    max-height: 100px;
+}
+
+.fixPoster{
+    margin: 2em;
+    padding: 2em;
+    float:left;
+}
+
+.fixHorario{
+    margin: 1em;
+    float:left;
+}

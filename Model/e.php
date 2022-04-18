@@ -30,7 +30,7 @@ class clse{
 
         $tabla = 'asientos_disponibles';
         $shoto = intval($this ->actor); 
-        for ($i=0; $i <$shoto; $i++) { 
+        for ($i=1; $i <$shoto; $i++) { 
             $registro = array();
         $registro["Titulo"] = $this -> titulo;
         $registro["Asiento"] = $i;

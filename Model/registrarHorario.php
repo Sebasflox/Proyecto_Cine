@@ -47,28 +47,6 @@ class clsHorario{
         catch(exception $e){
             $respuesta["operacion"] = 0;
         }
-        
-        $tablon = 'asientos_disponibles';
-        $shoto = intval($this ->asiento); 
-        for ($i=0; $i <$shoto; $i++) { 
-            $registro = array();
-        $registro["Titulo"] = $this -> titulo;
-        $registro["Asiento"] = $i;
-        $registro["Sala"] = $this -> sala;
-        $registro["Estado"] = $this -> estado;
-        $registro["Horario"] = $this -> horario;
-        
-        try{
-            $db = $this -> conexion();
-            $db -> autoExecute($tablon, $registro, 'INSERT');
-            $respuesta["operacion"] = 1;
-        }
-        catch(exception $e){
-            $respuesta["operacion"] = 0;
-        }
-        echo json_encode($respuesta);
-        }
-
         echo json_encode($respuesta);
         return json_encode($respuesta);
     }
