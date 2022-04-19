@@ -31,7 +31,8 @@
           }
 
     ?>
-
-
+</thead>
+</table>
+        </main>
 
 <?php include "shared/footer.php" ?>
