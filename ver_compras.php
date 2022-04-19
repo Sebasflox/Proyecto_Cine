@@ -37,8 +37,8 @@
             echo '</tr>';
           ?>
         </thead>
-        <tbody id="datosTabla">
-        </tbody>
+      
+       
       </table>
 
 
