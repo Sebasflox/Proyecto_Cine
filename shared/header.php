@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/estilo_index.css">
     <link rel="stylesheet" href="css/estilo_ia.css">
+    <link rel="stylesheet" href="css/psa.css">
     <link rel="stylesheet" href="css/estilo_compras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,15 +60,7 @@
                 <li class="nav-item">
                   <a id="nav_text" class="nav-link Texto" href="contactenos.php">Contactenos</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a id="nav_text" class="nav-link dropdown-toggle Texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Salas
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="regulares_S.html">Regulares</a></li>
-                    <li><a class="dropdown-item" href="vip_S.html">Vip</a></li>
-                  </ul>
-                </li>
+              
               </ul>
         </div>
     </div>
