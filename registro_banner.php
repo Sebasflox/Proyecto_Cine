@@ -30,6 +30,7 @@
             </div>
             <button type="submit" name="crearB" id="crearB" class="btn btn-primary" >Enviar</button>
           </form>
+          <a class="btn btn-outline-dark" href="admin.php">Volver a admin</a>
         </section>
        
     </div>
