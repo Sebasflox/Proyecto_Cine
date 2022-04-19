@@ -45,8 +45,6 @@
       
       <div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end background">
-            <a class="nav-link first_nav" href="servicios.php">Servicios</a>
-            <a class="nav-link first_nav" href="servicios.php">Servicios</a>
             <a href="registrarse.php"><inpu class="btn btn-primary me-md-2" type="button" value="">Registrarse</a>
             <a href="IniciarSesion.php"><inpu class="btn btn-primary me-md-2" type="button" value="">IniciarSesion</a>
             
@@ -70,9 +68,6 @@
                     <li><a class="dropdown-item" href="vip_S.html">Vip</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                    <a id="nav_text" class="nav-link Texto" href="protocolos.html">Protocolos</a>
-                  </li>
               </ul>
         </div>
     </div>

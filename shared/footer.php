@@ -7,22 +7,22 @@
           <div class="row">
             <div class="col">
              <div>
-               <p id="texto_footera" href="contactenos.html">Programación</p>
+               <p id="texto_footera">Programación</p>
            </div>
            </div>
             <div class="col">
              <div>
-             <p id="texto_footera" href="contactenos.html">Sobre Fernando</p>
+             <p id="texto_footera" >Sobre Fernando</p>
              </div>
            </div>
             <div class="col">
               <div>
-                 <p id="texto_footera" href="contactenos.html">Publicidad y Eventos</p>
+                 <p id="texto_footera">Publicidad y Eventos</p>
               </div>
            </div>
              <div class="col">
                <div>
-                 <p id="texto_footera" href="contactenos.html">Contactenos</p>
+                 <p id="texto_footera">Contactenos</p>
                </div>
              </div>
           </div>
@@ -31,48 +31,43 @@
          <div class="row">
            <div class="col" style="margin-top: 27px;">
             <div>
-              <a href="cartelera.html">
+              <a >
                 <p id="texto_footer">Cartelera</p>
               </a>
-              <a href="proximamente.html">
+              <a >
                 <p id="texto_footer">Próximamente</p>
               </a>
-              <a href="preventa.html">
+              <a>
                 <p id="texto_footer">Preventa</p>
               </a>
           </div>
           </div>
            <div class="col " style="margin-top: 27px;">
             <div>
-            <a href="contactenos.html">
+            <a >
               <p id="texto_footer">Quienes somos</p>
             </a>
-            <a href="salas.html">
+            <a >
               <p id="texto_footer">Salas</p>
             </a>
-            <a href="contactenos.html">
+            <a>
               <p id="texto_footer">Terminos y condiciones</p>
             </a>
             </div>
           </div>
            <div class="col" style="margin-top: 45px;">
              <div>
-                <a href="contactenos.html">
+                <a >
                   <p id="texto_footer">Eventos privados</p>
                 </a>
-              <a href="contactenos.html">
+              <a >
                 <p id="texto_footer">Publicidad</p>
               </a>
              </div>
           </div>
             <div class="col" style="margin-top: 45px;">
               <div>
-                <a  href="contactenos.html">
-                  <p id="texto_footer">Escribanos</p>
-                </a>
-                <a href="contactenos.html">
-                  <p id="texto_footer">Trabaja con nosotros</p>
-                </a>
+    <!-- codigo QR -->
               </div>
             </div>
          </div>
