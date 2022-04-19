@@ -11,3 +11,12 @@
 .Rosado{
     background-color: orange !important;
 }
+
+b{
+    color: white;
+    background-color: orange;
+}
+
+p{
+    font-size: 20px;
+}

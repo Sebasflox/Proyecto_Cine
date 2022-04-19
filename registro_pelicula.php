@@ -69,9 +69,11 @@
             <div class="row">
               <div class="col">
               <label class="Texto">Estado</label>
-                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado">
+                  <select class="form-select" name="estado" id="estado">
+                    <option value="1">Activo</option>
+                    <option value="0">Inactivo</option>
+                  </select>
               </div>
-            </div>
           </form>
         </section>
         <button type="submit" name="crearar" id="crearar" class="btn btn-primary" >Enviar</button>

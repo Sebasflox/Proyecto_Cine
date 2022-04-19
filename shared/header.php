@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="css/estilo_index.css">
     <link rel="stylesheet" href="css/estilo_ia.css">
     <link rel="stylesheet" href="css/psa.css">
+    <link rel="stylesheet" href="css/carteldesanta.css">
     <link rel="stylesheet" href="css/estilo_compras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
