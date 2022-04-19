@@ -1,11 +1,11 @@
 <?php include "shared/header.php" ?>
 
     <main>
-      
+      <center>
       <div class="col-6 form__R">
         <section id="1">
           <form action="" id="formulario" method="POST">
-            <label class="Texto">Registrweqeqwearse</label>
+            <label class="Texto">Registrarse</label>
             <div class="row">
               <div class="col">
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre">
@@ -37,7 +37,8 @@
         <button type="submit" name="crear" id="crear" class="btn btn-primary" >Enviar</button>
     </div>
 </div>
-
+   </center>
+   <p style="font-size: x-large">.</p>
 <?php 
 
 include 'Model/conexion.php';
