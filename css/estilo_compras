@@ -1,0 +1,35 @@
+table{  
+	margin: 0px auto 20px auto !important; 
+	border-collapse: collapse !important;
+	text-align: left;
+}
+
+table thead tr th{
+	font-weight: normal !important;
+}
+
+table tbody tr td, table tfoot tr td, table thead tr th{
+	padding: 6px;
+	vertical-align: top;
+}
+
+table tfoot tr td{
+	text-align: right;
+}
+
+table.lista tbody tr td{
+	border-bottom: 1px solid #ddd;
+}
+
+table.lista thead th, table.formulario thead th{
+	color: #EB0000;
+	border-bottom: 1px solid #CCC;
+}
+
+table.lista tfoot td, table.formulario tfoot td{
+	color: #EB0000;
+}
+
+table.formulario tfoot td{
+	border-top: 1px solid #CCC;
+}
