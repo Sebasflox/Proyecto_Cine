@@ -1,7 +1,7 @@
 .form-control:focus{
-    box-shadow: 0 0 10px  rgb(224, 70, 64) !important ;
-    border: 2px solid rgb(224, 70, 64);
-    color: rgb(224, 70, 64);
+    box-shadow: 0 0 10px  rgb(255, 8, 0) !important ;
+    border: 2px solid rgb(244, 8, 0);
+    color: rgb(255, 8, 0);
 }
 
 .margenes{
