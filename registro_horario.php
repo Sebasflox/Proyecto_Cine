@@ -9,7 +9,7 @@
             
             <div class="row">
               <div class="col">
-              <label class="Texto">
+              <label class="Texto">Pelicula
                 <select class="form-select" name="titulo" id="titulo">
                   <?php 
                     include 'select.php';
@@ -35,8 +35,15 @@
             </div>
             <div class="row">
               <div class="col">
-              <label class="Texto">Sala</label>
-                <input type="text" class="form-control" name="sala" id="sala" placeholder="Sala">
+              <label class="Texto"> Sala
+                <select class="form-select" name="sala" id="sala">
+                  <?php 
+                    foreach ($resultado_1 as $key => $value) {
+                      echo '<option value="'.$value["Nombre"].'">'.$value["Nombre"].'</option>';
+                    }
+                    ?>
+                </select> 
+              </label>
               </div>
             </div>
             <div class="row">
