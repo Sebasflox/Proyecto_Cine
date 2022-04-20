@@ -11,6 +11,6 @@ function agregarBanner(){
         }  
     });
     alert("Registro exitoso");
-    window.location.href="CineFernando/admin.php";
+    window.location.href="admin.php";
 
 }

@@ -21,7 +21,7 @@
             <div class="row">
               <div class="mb-3">
               <label class="Texto">Fecha de publicación</label>
-                <input type="text" class="form-control" name="publicacion" id="publicacion" placeholder="Fecha de publicación">
+                <input type="date" class="form-control" name="publicacion" id="publicacion" placeholder="Fecha de publicación">
               </div>
               <div class="row">
               <div class="mb-3">
@@ -30,8 +30,8 @@
               </div>
               <div class="row">
               <div class="mb-3">
-              <label class="Texto">Estado</label>
-                  <select class="form-select" name="estado" id="estado">
+              <label class="Texto">Clase</label>
+                  <select class="form-select" name="Clase" id="Clase">
                     <option value="first-slide">first-slide</option>
                     <option value="second-slide">second-slide</option>
                     <option value="third-slide">third-slide</option>
@@ -40,8 +40,8 @@
               </div>
               <div class="row">
               <div class="mb-3">
-              <label class="Texto">Estado</label>
-                  <select class="form-select" name="estado" id="estado">
+              <label class="Texto">Activo</label>
+                  <select class="form-select" name="activo" id="activo">
                     <option value="active">active</option>
                     <option value="">Inactivo</option>
                   </select>
@@ -77,6 +77,9 @@ include 'Model/registrarBanner.php';
             $c -> titulo = $_POST['titulo'];
             $c -> fecha = $_POST['publicacion'];
             $c -> imagen= $_POST["imagen"];
+            $c -> id = $_POST['id'];
+            $c -> Clase = $_POST['Clase'];
+            $c -> activo = $_POST['activo'];
             $c -> estado = $_POST['estado'];
             $c -> insertar();
         }

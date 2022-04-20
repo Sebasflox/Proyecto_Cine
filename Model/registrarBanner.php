@@ -10,6 +10,9 @@ class clsBanner{
     public $fecha;
     public $imagen;
     public $estado;
+    public $id;
+    public $Clase;
+    public $activo;
 
     public function conexion(){
 
@@ -30,10 +33,13 @@ class clsBanner{
         $tabla = 'banner';
 
         $registro = array();
+        $registro["id"] = $this -> id;
         $registro["Titulo"] = $this -> titulo;
-        $registro["Fecha"] = $this -> fecha;
         $registro["Imagen"] = $this -> imagen;
-        $registro["Estado"] = $this -> estado;
+        $registro["Fecha_publicacion"] = $this -> fecha;
+        $registro["clase"] = $this -> Clase;
+        $registro["url"] = "#";
+        $registro["activo"] = $this -> estado;
         try{
             $db = $this -> conexion();
             $db -> autoExecute($tabla, $registro, 'INSERT');
