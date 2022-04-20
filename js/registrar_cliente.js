@@ -1,6 +1,5 @@
 function agregardatos(){
-    alert("Registro exitoso");
-    window.location.href="/admin.php";
+
     var datos =$('#formulario').serialize();
 
     $.ajax({
@@ -12,4 +11,6 @@ function agregardatos(){
         }  
     });
 
+    alert("Registro exitoso");
+    window.location.href="IniciarSesion.php";
 }

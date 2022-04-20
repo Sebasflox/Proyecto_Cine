@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <script src="plugins/pdf/dist/jspdf.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src = "js/peticion_banner.js" ></script>
@@ -35,8 +35,6 @@
     <script src = "js/registrar_cliente.js" ></script>
     <script src = "js/peticion_titulo.js" ></script>
     <script src = "js/generica.js" ></script>
-    <script src = "js/e.js" ></script>
-  
 </head>
 
 <!--Botones-->

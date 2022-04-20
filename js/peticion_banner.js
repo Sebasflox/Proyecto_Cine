@@ -1,6 +1,5 @@
 function agregarBanner(){
-    alert("Registro exitoso");
-    window.location.href="/admin.php";
+
     var datos =$('#formularioB').serialize();
 
     $.ajax({
@@ -11,5 +10,7 @@ function agregarBanner(){
         success: function(e){
         }  
     });
+    alert("Registro exitoso");
+    window.location.href="CineFernando/admin.php";
 
 }

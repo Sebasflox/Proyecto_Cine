@@ -1,6 +1,6 @@
 function agregarPelicula(){
     alert("Registro exitoso");
-    window.location.href="/admin.php";
+    window.location.href="admin.php";
     var datos =$('#formularioP').serialize();
 
     $.ajax({
@@ -11,5 +11,4 @@ function agregarPelicula(){
         success: function(e){
         }  
     });
-    location.href ="/CineFernando/registro_horario.php";
 }

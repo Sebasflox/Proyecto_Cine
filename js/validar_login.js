@@ -12,10 +12,10 @@ jQuery(document).on('submit','#formularioL', function(event){
                 if(respuesta["TIPO"]== 1) {
                     location.href ="/CineFernando/index.php";
                 } else{
-                    location.href ="/CineFernando/registro_pelicula.php";
+                    location.href ="/CineFernando/admin.php";
                 }
             } else{
-                alert("#s");
+                alert("#Usuario no existe");
             }
             
         })

@@ -1,6 +1,5 @@
 function agregarHorario(){
-    alert("Registro exitoso");
-    window.location.href="/admin.php";
+
     var datos =$('#formularioh').serialize();
 
     $.ajax({
@@ -12,6 +11,7 @@ function agregarHorario(){
         }  
         
     });
-    //location.href ="/Proyecto/Proyecto_cine/registro_sala.php";
+    alert("Registro exitossssso");
+    window.location.href="admin.php";
 }
 

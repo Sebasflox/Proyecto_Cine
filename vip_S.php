@@ -33,13 +33,17 @@
     
     if ($infoHorarioFinal) {
         while ($row4 = $infoHorarioFinal->fetchRow()) {
-        echo '<button class="fixHorario"><a href="comprarAsientos.php?variable1=' . $row4["Titulo"]. '">' . $row4["Hora"]. '</a></button>'; 
-        }
-    else {echo 'No hay horarios disponibles'};
-    }
+        echo '<button class="fixHorario"><a href="comprarAsientos.php?variable1=' . $row4["Titulo"]. ' & Precio='.$row4["Precio"].'">' . $row4["Hora"]. '</a></button>'; 
+        }}
+    else {echo 'No hay horarios disponibles';}
+    
     
     echo '</div>';
     ?>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </main>
 

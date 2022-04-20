@@ -16,6 +16,7 @@
   echo '<p>Butaca Desocupada: <b class="reds">Azul</b> </p>';
   echo '<p>Butaca Ocupada: Roja </p>';
   echo '<p>Butaca Seleccionada: Amarilla </p>';
+  echo '<p>Precio por Asiento: '.$_GET['Precio'].'</p>';
   while($row4 = $infoPeliFinal->fetchRow()){
    
     if($row4["Estado"]){
@@ -54,8 +55,11 @@
  
 ?>
 <br>
-<button class="btn btn-primary me-md-2" Onclick="comprarAsientos('<?php echo $Titulo;?>','<?php echo $Horario;?>', '<?php echo $Sala;?>')">Comprar</button>
+<button class="btn btn-primary me-md-2" Onclick="comprarAsientos('<?php echo $Titulo;?>','<?php echo $Horario;?>', '<?php echo $Sala;?>', '<?php echo $_GET['Precio'];?>')">Comprar</button>
 </div>
+
+<br>
+<br>
 </main>
 <?php include "shared/footer.php" ?>
 
