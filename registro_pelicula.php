@@ -78,7 +78,6 @@
         </section>
         <button type="submit" name="crearar" id="crearar" class="btn btn-primary" >Enviar</button>
     </div>
-    <a class="btn btn-outline-dark" href="admin.php">Volver a admin</a>
 </div>
    
 </main>

@@ -72,7 +72,6 @@
             </div>
             <button type="submit" name="crearH" id="crearH"  class="btn btn-primary" >Enviar</button>
           </form>
-          <a class="btn btn-outline-dark" href="admin.php">Volver a admin</a>
         </section>
         
     </div>

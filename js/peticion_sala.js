@@ -1,5 +1,6 @@
 function agregarSala(){
-    console.log("fdasd");
+    alert("Registro exitoso");
+    window.location.href="/admin.php";
     var datos =$('#formularioS').serialize();
 
     $.ajax({

@@ -1,5 +1,6 @@
 function agregarBanner(){
-    console.log("fdasd");
+    alert("Registro exitoso");
+    window.location.href="/admin.php";
     var datos =$('#formularioB').serialize();
 
     $.ajax({

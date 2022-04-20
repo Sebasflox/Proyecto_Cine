@@ -1,4 +1,4 @@
-<?php include "shared/header.php" ?>
+<?php include "shared/header.php"; ?>
 
 <main>
 <?php 

@@ -41,7 +41,7 @@
        
       </table>
 
-      <a class="btn btn-outline-dark" href="admin.php">Volver a admin</a>
+
 </main>
 
 <?php include "shared/footer.php" ?>

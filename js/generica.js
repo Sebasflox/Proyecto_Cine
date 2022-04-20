@@ -20,7 +20,7 @@ function comprarAsientos(Titulo, Horario, Sala){
         url: "butacaOcupada.php",
         data: {Lista: compras, Titulo: Titulo, Horario: Horario, Sala:Sala},
         success: function(msg){
-            location.href ="/Cine_Fernando/compras_Cliente.php";
+            location.href ="/CineFernando/compras_Cliente.php";
         }
     });
 }

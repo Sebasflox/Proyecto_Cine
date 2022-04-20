@@ -10,7 +10,8 @@
     $Estado = $_POST['Estado'];
     $Horario = $_POST['Horario'];
 
-    $campo = intval($cantidadAsientos); 
+
+        $campo = intval($cantidadAsientos); 
     $campo++;
         for ($i=1; $i <$campo; $i++) {
             $sql = "INSERT INTO `asientos_disponibles`(`Titulo`, `Asiento`, `Sala`, `Estado`, `Horario`) 
@@ -19,6 +20,8 @@
             $stmt = $db-> query($sql);
         } 
 
+
+    
         $db -> close();
 
         echo $Titulo;

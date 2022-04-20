@@ -1,5 +1,6 @@
 function agregarHorario(){
-    console.log("fdasd");
+    alert("Registro exitoso");
+    window.location.href="/admin.php";
     var datos =$('#formularioh').serialize();
 
     $.ajax({

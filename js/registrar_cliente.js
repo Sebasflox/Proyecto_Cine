@@ -1,5 +1,6 @@
 function agregardatos(){
-    console.log("fdasd");
+    alert("Registro exitoso");
+    window.location.href="/admin.php";
     var datos =$('#formulario').serialize();
 
     $.ajax({
